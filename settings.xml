@@ -4,7 +4,7 @@
           xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
     <servers>
         <server>
-            <id>${server}</id>
+            <id>ossrh</id>
             <username>/cHbn+3j</username>
             <password>4FSFqxB9rwhgBthNfwt5VQkHK60nMImnfWeVfTP2k4ln</password>
         </server>
@@ -13,9 +13,11 @@
         <profile>
             <id>ossrh</id>
             <properties>
-                <gpg.executable>gpg</gpg.executable>
+                <gpg.executable>gpg2</gpg.executable>
                 <gpg.keyname>B0C2A6DA1ABD0C886F2D4D160E747CEB1A7D8592</gpg.keyname>
                 <gpg.passphrase>Jinesh@777</gpg.passphrase>
+                <gpg.algorithm>RSA</gpg.algorithm>
+                <gpg.suppressKeyringWarning>true</gpg.suppressKeyringWarning>
             </properties>
         </profile>
     </profiles>
